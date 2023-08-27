@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <title>Website</title>
+</head>
+
+<body>
+    <script>
+        let array = [
+            ["fa-bars"]
+        ]
+        let background = document.createElement("div")
+        background.classList.add("background")
+        let nav = document.createElement("div")
+        nav.classList.add("nav")
+        let boxs1 = document.createElement("div")
+        boxs1.classList.add("boxs1")
+        let i = document.createElement("i")
+        i.classList.add("fa-solid")
+        i.classList.add(array)
+        let lefth2 = document.createElement("h2")
+        lefth2.innerHTML = "VeuLampe"
+        let ul = document.createElement("ul")
+        ul.classList.add("ul")
+        let list1 = document.createElement("li")
+        list1.classList.add("li")
+        list1.innerHTML = "Latest"
+        let list2 = document.createElement("li")
+        list2.classList.add("li")
+        list2.innerHTML = "Modern"
+        let list3 = document.createElement("li")
+        list3.classList.add("li")
+        list3.innerHTML = "Contemporary"
+        let list4 = document.createElement("li")
+        list4.classList.add("li")
+        list4.innerHTML = "Affordable"
+        let button = document.createElement("button")
+        button.classList.add("button1")
+        button.type = "button"
+        let span = document.createElement("span")
+        span.classList.add("span")
+        let lamp = document.createElement("div")
+        lamp.classList.add("lamp")
+        let light = document.createElement("div")
+        light.classList.add("light")
+        let text = document.createElement("h2")
+        text.classList.add("text")
+        text.innerHTML = "My First Projekt"
+        let text1 = document.createElement("p")
+        text1.classList.add("text1")
+        text1.innerHTML = "Javascript,HTML,CSS,SCSS,Bootstrap,Grid"
+        let a=document.createElement("a")
+        a.href="https://www.linkedin.com/in/elcin-abdullayev-583861229/"
+        let button2 = document.createElement("button")
+        button2.classList.add("button2")
+        button2.innerHTML = "Connected with Me"
+        button.addEventListener("click", () => {
+            button.classList.toggle("active");
+            light.classList.toggle("on");
+        })
+        button2.addEventListener("click", () => {
+           
+        })
+        let text2 = document.createElement("p")
+        text2.classList.add("text2")
+        text2.innerHTML = "04"
+        let button3 = document.createElement("button")
+        button3.classList.add("button3")
+        let span1 = document.createElement("span")
+        span1.classList.add("span1")
+        let text3 = document.createElement("p")
+        text3.classList.add("text3")
+        text3.innerHTML = "05"
+        boxs1.appendChild(i)
+        boxs1.appendChild(lefth2)
+        ul.appendChild(list1)
+        ul.appendChild(list2)
+        ul.appendChild(list3)
+        ul.appendChild(list4)
+        ul.appendChild(button)
+        button.appendChild(span)
+        nav.appendChild(boxs1)
+        nav.appendChild(ul)
+        background.appendChild(nav)
+        background.appendChild(lamp)
+        background.appendChild(light)
+        background.appendChild(text)
+        background.appendChild(text1)
+        a.appendChild(button2)
+        background.appendChild(a)
+        background.appendChild(text2)
+        background.appendChild(button3)
+        button3.appendChild(span1)
+        background.appendChild(text3)
+        document.body.appendChild(background)
+    </script>
+</body>
+
+</html>
